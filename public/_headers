@@ -1,0 +1,12 @@
+# 見本サイトを検索結果に出さない＋ブラウザ側の守り（Workers静的アセットの _headers。全パスに適用）
+# 書式は公式 https://developers.cloudflare.com/pages/configuration/headers/ で確認済み
+# （URLパターンの行 → 次の行からインデントしたヘッダー名: 値）
+# CSP：自分のドメインのファイル以外は読まない・他サイトの枠に埋め込ませない・フォーム送信先なし
+/*
+  X-Robots-Tag: noindex, nofollow
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'none'; object-src 'none'
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Strict-Transport-Security: max-age=31536000

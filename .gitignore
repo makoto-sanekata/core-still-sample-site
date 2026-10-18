@@ -1,0 +1,10 @@
+# Cloudflare（wrangler）のキャッシュ・アカウント情報は公開しない
+.wrangler/
+# 秘密になりうるもの
+.env
+.env.*
+*secret*
+*-key.json
+*token*.json
+.DS_Store
+__pycache__/
