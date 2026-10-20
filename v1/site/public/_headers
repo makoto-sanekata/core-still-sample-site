@@ -1,0 +1,5 @@
+# 見本サイトを検索結果に出さない（Cloudflare Pagesの _headers。全パスに適用）
+# 書式は公式 https://developers.cloudflare.com/pages/configuration/headers/ で確認済み
+# （URLパターンの行 → 次の行からインデントしたヘッダー名: 値）
+/*
+  X-Robots-Tag: noindex, nofollow

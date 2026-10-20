@@ -3,6 +3,7 @@
 株式会社CORE STILL（代表 古川 巨久さん）のサイトをもとに、初めて来た方が初回予約まで進みやすい流れを試すために作った見本サイトです。公開は古川さんの了解を得ています。
 
 - 公開中の見本：https://cs-sample-v2-3ed55e1b.makoto-net1210.workers.dev
+- 初版（v1）：[`v1/`](v1/README.md) に置いてあります（公開中：https://cs-sample-e3bc37aa.makoto-net1210.workers.dev ）
 - 本物のサイト：https://core-still.com/
 
 ## 見本であること
